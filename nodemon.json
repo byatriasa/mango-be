@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json.schemastore.org/nodemon.json",
+  "watch": ["./src", "../../packages/be-libs/dist"],
+  "ext": "js,ts",
+  "env": {
+    "NODE_ENV": "development"
+  }
+}
