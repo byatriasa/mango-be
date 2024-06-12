@@ -9,7 +9,9 @@
     "start": "NODE_ENV=production node --enable-source-maps dist/api.js",
     "lint": "tsc --noEmit && eslint --ignore-path .gitignore \"**/*.{ts,js}\"",
     "format": "prettier --ignore-path .gitignore --write .",
-    "run-script": "yarn build && node -r @swc-node/register"
+    "run-script": "yarn build && node -r @swc-node/register",
+    "test": "vitest",
+    "coverage": "vitest --coverage"
   },
   "dependencies": {
     "@tsconfig/node20": "^20.1.2",
@@ -36,6 +38,7 @@
     "@types/node": "^20.12.12",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
+    "@vitest/coverage-v8": "^1.6.0",
     "eslint": "^8.55.0",
     "eslint-config-prettier": "^8.10.0",
     "eslint-config-standard": "^17.1.0",
@@ -46,6 +49,8 @@
     "luxon": "^3.4.4",
     "nodemon": "^3.0.2",
     "prettier": "^3.1.1",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "vite-tsconfig-paths": "^4.3.2",
+    "vitest": "^1.6.0"
   }
 }
