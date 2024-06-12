@@ -13,7 +13,7 @@ import { applicantValidator } from '~/validators'
 
 const router = Router({ mergeParams: true })
 
-// POST /auth
+// POST /applicant
 router.post(
   '/',
   validateRequest({
