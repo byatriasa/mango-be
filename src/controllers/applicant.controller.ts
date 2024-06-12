@@ -7,13 +7,16 @@ import { createMiddleware } from '~/utils/middlewareHelper'
 // validators
 import type { applicantValidator } from '~/validators'
 
-// POST /auth
+// POST /applicant
 const post = createMiddleware(async (req, res) => {
   const body = req.body as applicantValidator.RegBody
 
   const results = await applicantService.createApplicant(body)
 
-  res.send({ message: 'Login successful!', results })
+  res.send({
+    message: 'Application has been registered successfully. ',
+    results
+  })
 })
 
 const applicantController = {
