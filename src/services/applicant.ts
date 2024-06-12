@@ -18,8 +18,7 @@ async function createApplicant(
   data: CreateApplicantParams
 ): Promise<HydratedDocument<ApplicantSchema>> {
   const applicant = await Applicant.findOne({
-    identity_number: data.identity_number,
-    email: data.email
+    $or: [{ identity_number: data.identity_number }, { email: data.email }]
   })
 
   if (applicant) {
