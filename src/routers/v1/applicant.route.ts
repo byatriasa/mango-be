@@ -4,7 +4,7 @@ import { Router } from 'express'
 import validateRequest from '~/middlewares/validateRequest'
 
 // controllers
-import authController from '~/controllers/applicant.controller'
+import applicantController from '~/controllers/applicant.controller'
 
 // validators
 import { applicantValidator } from '~/validators'
@@ -19,7 +19,7 @@ router.post(
   validateRequest({
     body: applicantValidator.regBody
   }),
-  authController.post
+  applicantController.post
 )
 
 export default router
