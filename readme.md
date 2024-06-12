@@ -1,8 +1,8 @@
 # Overview
 
-This repository contains a RESTful API service to submit applicant data, written using TypeScript and Express.
+This repository contains a RESTful API service for submitting applicant data, built with TypeScript and Express.
 
-This project is part of a recruitment process technical test assignment. Thus, the reason why I don't mention the company name.
+This project is part of a technical test for a recruitment process. For confidentiality reasons, the repository name does not explicitly represent the company's name.
 
 
 ## Technologies Used
